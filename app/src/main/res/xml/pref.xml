@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory android:title="Settings"
+        android:layout="@layout/pref_settings">
+        <EditTextPreference
+            android:key="username"
+            android:title="Username"
+            android:layout="@layout/pref_username"
+            android:summary=""
+            android:defaultValue=" "/>
+        <EditTextPreference
+            android:key="settings"
+            android:layout="@layout/pref_settings_ini"
+            android:title="Settings.ini"
+            android:summary=""/>
+        <ListPreference
+            android:key="gui"
+            android:title="GUI"
+            android:summary=""
+            android:defaultValue="50"
+            android:layout="@layout/pref_gui"
+            android:entries="@array/gui_entries"
+            android:entryValues="@array/gui_values"
+            />
+        <Preference
+            android:title="font"
+            android:key="font"
+            android:summary=""
+            android:layout="@layout/pref_font"/>
+    </PreferenceCategory>
+
+        <!--<PreferenceCategory app:title="Settings">
+
+            <EditTextPreference
+                app:key="username"
+                app:title="Username"
+                app:useSimpleSummaryProvider="true" />
+            <EditTextPreference
+                app:key="settings"
+                app:title="Settings.ini"
+                app:useSimpleSummaryProvider="true" />
+
+            <ListPreference
+                app:defaultValue="50"
+                app:entries="@array/gui_entries"
+                app:entryValues="@array/gui_values"
+                app:key="gui"
+                app:title="GUI"
+                app:useSimpleSummaryProvider="true" />
+
+
+        </PreferenceCategory>
+        -->
+
+
+</PreferenceScreen>

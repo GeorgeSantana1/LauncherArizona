@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name" translatable="false">LaucherArizona</string>
+    <string name="title_home" translatable="false">Information</string>
+    <string name="title_dashboard" translatable="false">Server list</string>
+    <string name="title_notifications" translatable="false">Settings</string>
+    <string name="path_site" translatable="false">Official site</string>title_description_home
+    <string name="description_home" translatable="false">Mobile client SAMP is currently experiencing a huge rise in popularity. On average, more than 1000 players play on SAMP Android ru servers at the same time and the growth continues every day.</string>
+    <string name="title_description_home" translatable="false">San Andreas Multiplayer (SAMP)</string>
+    <string name="subtitle_description_home" translatable="false">for Android OS</string>
+    <string name="favorites" translatable="false">Favorite</string>
+    <string name="official" translatable="false">Official</string>
+    <string name="hosted" translatable="false">Hosted</string>
+    <string name="press_again" translatable="false">Click again to exit</string>
+    <string name="no_internet" translatable="false">No internet connection</string>
+    <string name="retry" translatable="false">Retry</string>
+    <string name="exit" translatable="false">Exit</string>
+    <string name="no_app" translatable="false">сom.x4soft.sampclient didn\'t find</string>
+    <string name="get_app" translatable="false">Get app</string>
+    <string name="server_listed" translatable="false">Server already listed</string>
+    <string name="server_valid" translatable="false">Enter a valid server address</string>
+    <string name="invalid_select_font" translatable="false">Invalid file selected. Select a file with the ending .ttf</string>
+    <string name="data_save" translatable="false">Data saved</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_settings2">Settings</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="gui_entries">
+        <item>50%</item>
+        <item>100%</item>
+        <item>200%</item>
+    </string-array>
+
+    <string-array name="gui_values">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

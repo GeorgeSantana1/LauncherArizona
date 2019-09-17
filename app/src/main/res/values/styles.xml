@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="tab_layout_title" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/gothampro_light</item>
+    </style>
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/gothampro_light</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="PreferenceStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="brandSeekBar" parent="Widget.AppCompat.SeekBar.Discrete">
+        <item name="tickMark">@drawable/tickmark</item>
+    </style>
+</resources>

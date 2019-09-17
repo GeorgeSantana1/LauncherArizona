@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearContainerServerInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeContainerServerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/statusView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/ic_lock_close_server_outline" />
+
+            <TextView
+                android:id="@+id/nameServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/pingServer"
+                android:layout_toLeftOf="@+id/pingServer"
+                android:layout_toEndOf="@+id/statusView"
+                android:layout_toRightOf="@+id/statusView"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/gothampro_medium"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                app:fontFamily="@font/gothampro_medium" />
+
+            <TextView
+                android:id="@+id/pingServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/gothampro_light"
+                android:text="Ping: 0"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="12.5sp"
+                app:fontFamily="@font/gothampro_light" />
+
+            <TextView
+                android:id="@+id/addressServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameServer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/icon_players"
+                android:layout_toLeftOf="@+id/icon_players"
+                android:fontFamily="@font/gothampro_light"
+                android:padding="5dp"
+                android:text="Address:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="12.5sp"
+                app:fontFamily="@font/gothampro_light" />
+
+            <TextView
+                android:id="@+id/modeServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressServer"
+                android:layout_alignEnd="@+id/addressServer"
+                android:layout_alignRight="@+id/addressServer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="29dp"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/gothampro_light"
+                android:padding="5dp"
+                android:text="Mode: "
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="12.5sp"
+                app:fontFamily="@font/gothampro_light" />
+
+            <ImageView
+                android:id="@+id/icon_players"
+                android:layout_width="26dp"
+                android:layout_height="17dp"
+                android:layout_alignBottom="@+id/modeServer"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="17dp"
+                android:layout_toStartOf="@+id/countPlayers"
+                android:layout_toLeftOf="@+id/countPlayers"
+                android:src="@drawable/icon_people" />
+
+            <TextView
+                android:id="@+id/countPlayers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/modeServer"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="@font/gothampro_light"
+                android:text="0/0"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="12.5sp"
+                app:fontFamily="@font/gothampro_medium" />
+
+        </RelativeLayout>
+    </LinearLayout>

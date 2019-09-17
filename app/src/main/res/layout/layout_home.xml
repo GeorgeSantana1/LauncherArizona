@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_home"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="60dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:orientation="vertical">
+        <ImageView
+            android:id="@+id/headImageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/head_pic" />
+
+        <TextView
+            android:id="@+id/titleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/gothampro_medium"
+            android:gravity="center"
+            android:text="@string/title_description_home"
+            android:textColor="@color/colorOrangeBrand"
+            android:textSize="17.5sp" />
+
+        <TextView
+            android:id="@+id/subtitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothampro_light"
+            android:gravity="center"
+            android:text="@string/subtitle_description_home"
+            android:textColor="@color/colorWhite"
+            android:textSize="17.5sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothampro_light"
+            android:gravity="center"
+            android:lineSpacingExtra="7.5dp"
+            android:text="@string/description_home"
+            android:textColor="@color/colorGrayBrand"
+            android:maxWidth="300dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/pathToSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/gothampro_medium"
+            android:onClick="startProgress"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/path_site"
+            android:textAllCaps="false" />
+
+
+
+
+
+
+
+
+</LinearLayout>

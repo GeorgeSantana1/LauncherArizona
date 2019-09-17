@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_servers"
+    app:startDestination="@id/favoriteServersFragment">
+
+    <fragment
+        android:id="@+id/favoriteServersFragment"
+        android:name="com.sha512boo.ArizonaLauncher.fragment.FavoriteServersFragment"
+        android:label="fragment_favorite_servers"
+        tools:layout="@layout/fragment_favorite_servers" />
+    <fragment
+        android:id="@+id/officialServersFragment"
+        android:name="com.sha512boo.ArizonaLauncher.fragment.OfficialServersFragment"
+        android:label="fragment_official_servers"
+        tools:layout="@layout/fragment_official_servers" />
+    <fragment
+        android:id="@+id/hostedServersFragment"
+        android:name="com.sha512boo.ArizonaLauncher.fragment.HostedServersFragment"
+        android:label="fragment_hosted_servers"
+        tools:layout="@layout/fragment_hosted_servers" />
+</navigation>

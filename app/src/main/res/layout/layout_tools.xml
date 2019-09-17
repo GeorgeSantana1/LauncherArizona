@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="50dp"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/inputUserName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_input"
+        android:ems="10"
+        android:fontFamily="@font/gothampro_light"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="@color/colorGrayBrand"
+        android:textColorHint="@drawable/focused_edittext"
+        android:textSize="17.5sp"
+        android:windowSoftInputMode="stateHidden" />
+
+
+    <Button
+        android:id="@+id/pathToFonts"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_input"
+        android:drawableRight="@drawable/icon_font_large"
+        android:fontFamily="@font/gothampro_light"
+        android:gravity="start"
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:text="Open the fonts folder"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrayBrand"
+        android:textColorHint="@drawable/focused_edittext"
+        android:textSize="17.5sp" />
+
+
+    <TextView
+        android:id="@+id/textView_title_seebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gothampro_light"
+        android:text="GUI Scale factor"
+        android:textColor="@color/colorGrayBrand"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/GuiScale"
+        style="@style/brandSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:max="2"
+        android:maxHeight="12dip"
+        android:minHeight="12dip"
+        android:progress="1"
+        android:progressDrawable="@drawable/seek_progress"
+        android:splitTrack="false"
+        android:thumb="@drawable/seek_balls"
+        app:splitTrack="false" />
+
+    <TableLayout
+        android:id="@+id/progressValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/statusRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/progress_status_50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothampro_light"
+                android:gravity="start"
+                android:text="50%"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/progress_status_100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothampro_light"
+                android:gravity="center"
+                android:text="100%"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/progress_status_200"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:fontFamily="@font/gothampro_light"
+                android:gravity="right"
+                android:text="200%"
+                android:textColor="@color/colorGrayBrand"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/gothampro_medium"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="20dp"
+        android:text="Accept"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17.5sp" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
